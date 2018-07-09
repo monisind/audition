@@ -13,7 +13,7 @@ app.use(bodyParser.json({ strict: false }));
 
 
 app.get('/', function (req, res) {
-  res.send('Hello World!')
+  res.sendFile(__dirname + '/index.html')
 })
 
 // Get a msg
